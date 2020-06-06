@@ -1,0 +1,317 @@
+
+
+/*	Resets
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+
+/* Making Mobile Menu */
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1234px){
+	.team .col-md-3{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 40px;
+	}
+	.team-member {
+		text-align: center;
+	}
+	.contact form textarea{
+		width: 100%;
+		height: 280px;
+	}
+	.contact form input{
+		width: 100%;
+	}
+	
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.main-menu{
+		margin-top: 42px;
+	}
+	.service .col-md-3{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 40px;
+	}
+	.team .col-md-3{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 40px;
+	}
+	.team-member {
+		text-align: center;
+	}
+	.skill .col-md-3{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 40px;
+	}
+	
+	.skill-item {
+		text-align: center;
+	}
+	.skill-item h2 {
+		font-size:40pt ;
+		transform: translate(0px, -130px);
+	}
+	.portfolio-block h4 {
+		text-align: center;
+		padding: 20px;
+	}
+	.client-picture {
+		display: block;
+		margin: 20px 78px;
+	}
+	.contact form textarea{
+		width: 100%;
+		height: 280px;
+	}
+	.contact form input{
+		width: 100%;
+	}
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+	.header-main{
+		height: auto;
+	}
+	.header-content{
+		padding-bottom:50px;
+	}
+	.main-menu{
+		display: none;
+	}
+	.logo{
+		width: 20%;
+	}
+	.team-member {
+		text-align: center;
+		margin-top:30px;
+	}
+	p.member-description{
+		height: auto;
+	}
+	.skill-item {
+		text-align: center;
+	  }
+	  .skill-item h2 {
+		transform: translate(0px,-136px);
+	  }
+	  .client{
+		  text-align: center;
+		  margin-bottom: 30px;
+	  }
+	  .client-picture img{
+		  display: block;
+		  margin-left: 140px;
+	  }
+	.contact form textarea{
+		width: 100%;
+		height: 280px;
+	}
+	.contact form input{
+		width: 100%;
+	}
+	.contact.section-padding {
+		padding: 120px 0px;
+	
+	}
+
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.team-member {
+		text-align: center;
+		margin-top:30px;
+	}
+	p.member-description{
+		height: auto;
+	}
+	.skill-item {
+		text-align: center;
+	  }
+	  .skill-item h2 {
+		transform: translate(0px,-136px);
+	  }
+	  .client{
+		  text-align: center;
+		  margin-bottom: 30px;
+	  }
+	  .client-picture img{
+		  display: block;
+		  margin-left: 140px;
+		  margin-bottom: 20px;
+	  }
+	.contact form textarea{
+		width: 100%;
+		height: 280px;
+	}
+	.contact form input{
+		width: 100%;
+	}
+	.contact.section-padding {
+		padding: 120px 0px;
+	
+	}
+
+}
+
+@media all and (max-width: 768px) {
+	.header-area {
+		display: none;
+	}
+	.header-area .container {
+		width: 100%;
+	}
+	.header-area .menu-area ul {
+		float: none;
+	}
+	.header-area .menu-area ul li {
+		float: none;
+		text-align: center;
+		 margin-bottom: 5px;
+		 transition: 0.5s;
+	}
+	.header-area .menu-area ul li:hover {
+		background: #e74c3c;
+	}
+	.header-area .menu-area ul li:before,
+	.header-area .menu-area ul li:after {
+		border: none;
+	}
+	.toggle {
+		display: block;
+	}
+	.active {
+		display: block;
+	}
+	.client-picture img{
+		margin-bottom: 20px;
+	}
+
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (min-width: 381px) and (max-width: 479px){
+	.header-main h1{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.header-content a{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.section-heading h2{
+		font-size: 30px;
+		line-height: 45px;
+	}
+	.section-padding{
+		padding: 20px;
+	}
+	.section-heading h2::after{
+		left: 35%;
+	}
+	ul.team-contact li {
+		margin-top: 15px;
+	}
+	.contact form input,.contact form textarea{
+		font-size: 18px;
+	}
+	.contact form textarea{
+		height: 170px;
+	}
+	.contact form button{
+		font-size: 18px;
+	}
+	.social-menu ul li a{
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 380px){
+	.header-main h1{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.header-content a{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.section-heading h2{
+		font-size: 30px;
+		line-height: 45px;
+	}
+	.section-padding{
+		padding: 20px;
+	}
+	.section-heading h2::after{
+		left: 35%;
+	}
+	ul.team-contact li {
+		margin-top: 15px;
+	}
+	.contact form input,.contact form textarea{
+		font-size: 18px;
+	}
+	.contact form textarea{
+		height: 170px;
+	}
+	.contact form button{
+		font-size: 18px;
+	}
+	.social-menu ul li a{
+		font-size: 18px;
+	}
+	.client-picture{
+		margin-left: -15%;
+	}
+}
